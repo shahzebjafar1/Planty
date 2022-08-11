@@ -1,0 +1,217 @@
+/* Fonts Used */
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lora:wght@500;700&family=Poppins:ital,wght@0,200;0,500;1,400&family=Quicksand&display=swap');
+/* Belleza -   font-family: 'Belleza', sans-serif;
+font-family: 'Lora', serif;
+Aeonik
+Lora */
+
+/* Default Styles */
+
+/* font-family: 'Belleza', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid red;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+
+  /* overflow: hidden; */
+
+}
+
+a{
+
+  text-decoration: none;
+  font-weight: 400;
+  color: #000000;
+
+}
+
+.container{
+  width: 100vw;
+}
+
+/* Header Styles */
+.header{
+  width: 100%;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.logo{
+  margin-left: 50px;
+  text-align: left;
+  align-items: flex-start;
+
+}
+.menu-items{
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.menu-item{
+  display: inline;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0 40px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.menu-icons {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+
+
+}
+
+/* Hero Styles */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 859px;
+}
+
+
+.hero-right{
+  width: 100%;
+  height: 859px;
+
+  background: url('./Images/unsplash_YAPZt8wxMO4.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.instagram{
+  background: url('./Images/img-above-footer.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0 auto;
+  width: 1339px;
+  max-width: 100%;
+  height:746px;
+}
+
+/* Section-3 */
+.section-3{
+  height:436px;
+  display: flex;
+  background: #EDEDED;
+  align-content: flex-end;
+}
+
+/* Section Shop Styles  */
+.shop{
+
+}
+
+.shop-btn{
+  color: #ffffff;
+  padding: 10px 30px;
+  background-color: #000000;
+  border-radius: 40px;
+}
+
+/* Section 5 */
+.section-5{
+
+
+}
+
+.section-5-left img {
+
+}
+
+.section-5-right img {
+
+}
+
+.news-letter{
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-letter-heading{
+  font-family: 'Lora', serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.email-inp{
+  border: none;
+  border-bottom:2px solid #000000;
+}
+
+.btn-subscribe{
+  color: #ffffff;
+  padding: 10px 30px;
+  background-color: #000000;
+  border-radius: 40px;
+  /* position: absolute; */
+  /* top:0 */
+}
+
+
+/* Slider */
+.card {
+  border: 0;
+  border-radius: 0;
+  }
+
+.card img {
+
+  border-radius: 0;
+}
+
+
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  display: none;
+}
+
+.scrolling-wrapper:-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+
+@media (max-width: 575.98px) {
+
+
+}
