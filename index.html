@@ -27,10 +27,11 @@
   </head>
 
   <body>
-    <!-- Section -1 Header -->
-    <div class="container-fluid header sticky-top">
-      <header class="container header sticky-top">
-        <div class="logo col-md-3">
+    <div class="container-fluid">
+      <nav
+        class="container navbar navbar-expand-lg navbar-light sticky-top header"
+      >
+        <div class="container-fluid">
           <svg
             width="123"
             height="34"
@@ -55,28 +56,59 @@
               fill="black"
             />
           </svg>
-        </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active menu-item"
+                  aria-current="page"
+                  href="#"
+                  >Plants</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#">For Office</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#">Plants Care</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item">About</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="menu-items col-md-6">
-          <ul class="my-auto">
-            <li class="menu-item"><a href="#">Plants</a></li>
-            <li class="menu-item"><a href="#">For Office</a></li>
-            <li class="menu-item"><a href="#">Plants Care</a></li>
-            <li class="menu-item"><a href="#">About</a></li>
+          <ul class="navbar-nav my-auto">
+            <li class="nav-item">
+              <img src="./Images/Group.png" alt="" />
+            </li>
+            <li class="nav-item">
+              <img class="mx-4" src="./Images/ICON.png" alt="" />
+            </li>
+            <li class="nav-item">
+              <img src="./Images/ICON2.png" alt="" />
+            </li>
           </ul>
         </div>
-        <div class="col-md-3 text-end">
-          <img src="./Images/Group.png" alt="" />
-          <img class="mx-4" src="./Images/ICON.png" alt="" />
-          <img src="./Images/ICON2.png" alt="" />
-        </div>
-      </header>
+      </nav>
     </div>
+
     <div class="container">
       <!-- Section 2 -->
       <div class="d-flex justify-content-between mb-5">
         <div
-          class="d-flex flex-column justify-content-between col-md-7 col-sm-6 col-6"
+          class="d-flex flex-column justify-content-between col-md-7 col-sm-6 col-7"
         >
           <div>
             <h1 class="hero-tagline display-1 pt-5">
@@ -85,7 +117,7 @@
             </h1>
           </div>
 
-          <div>
+          <div class="shop mt-2">
             <button class="shop-btn">Shop Now</button>
           </div>
           <div>
@@ -100,19 +132,20 @@
             </p>
           </div>
 
-          <div class="">
-            <img src="./Images/Bloomberg.png" alt="" />
-            <img class="mx-5" src="./Images/Forbes.png" alt="" />
+          <div class="fb-img">
+            <img class="col-5 Bloomberg" src="./Images/Bloomberg.png" alt="" />
+
+            <img class="col-5 forbes mx-3" src="./Images/Forbes.png" alt="" />
           </div>
         </div>
 
-        <div class="col-md-5 col-sm-6 col-6">
+        <div class="col-md-5 col-sm-6 col-4">
           <img class="hero-img" src="./Images/hero-img.png" alt="" />
         </div>
       </div>
 
       <!-- Section -3 -->
-      <div class="row py-5 mb-5">
+      <div class="row py-5 mb-2">
         <div class="col-md-6 col-sm-12">
           <p class="light-text text-sm-center text-md-start section-3-ltext">
             Each houseplant set is handled quickly and safely <br />
@@ -121,12 +154,23 @@
           </p>
         </div>
 
-        <div class="col-md-6 col-sm-12">
-          <p class="section-3-rtext text-sm-center text-md-start">
-            Learn how ve take care of your plant <br />
-            at every stage of its journey from our <br />
-            greenhouse to your home.
-          </p>
+        <div class="col-md-6 col-sm-12 col-lg-6">
+          <div class="col-12 col-md-12 col-lg-12">
+            <p class="section-3-rtext text-sm-center text-md-start">
+              Learn how ve take care of your plant <br />
+              at every stage of its journey from our <br />
+              greenhouse to your home.
+            </p>
+          </div>
+          <div class="row py-5 mb-5">
+            <div class="col-4">
+              <p class="learn-more">Learn more</p>
+            </div>
+
+            <div class="col-8">
+              <i class="fa-solid fa-circle-arrow-right fa-2x"></i>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -140,43 +184,17 @@
     <!-- Section-4 Banner-->
     <div class="container-fluid section-3 mb-5">
       <div
-        class="container d-flex justify-content-between align-items-end mb-5"
+        class="container d-flex justify-content-between align-items-end mb-4"
       >
-        <div><p>STEP 1</p></div>
-        <div><h1 class="banner-tagline">We put everything together</h1></div>
-        <div>
-          <svg
-            width="104"
-            height="44"
-            viewBox="0 0 104 44"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M61.1667 22C61.1667 33.5059 70.4941 42.8333 82 42.8333C93.506 42.8333 102.833 33.5059 102.833 22C102.833 10.4941 93.506 1.16667 82 1.16667C70.4941 1.16667 61.1667 10.4941 61.1667 22Z"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M78.875 13.6667L87.2084 22L78.875 30.3333"
-              stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M42.8333 22C42.8333 33.5059 33.5059 42.8333 22 42.8333C10.494 42.8333 1.16663 33.5059 1.16663 22C1.16663 10.4941 10.494 1.16667 22 1.16667C33.5059 1.16667 42.8333 10.4941 42.8333 22Z"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M25.125 13.6667L16.7916 22L25.125 30.3333"
-              stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <div class="col-2">
+          <p>STEP 1</p>
+        </div>
+        <div class="col-4">
+          <h1 class="banner-tagline">We put everything together</h1>
+        </div>
+        <div class="col-2 d-flex justify-content-between">
+          <img src="./Images/Extra Icons-1.png" alt="" />
+          <img src="./Images/Extra Icons.png" alt="" />
         </div>
       </div>
     </div>
@@ -185,7 +203,9 @@
       <!-- Section Shop -->
 
       <div class="row d-flex shop mb-5">
-        <div class="shop-title mb-3 col-md-12 col-sm-12"><p>OUR SHOP</p></div>
+        <div class="shop-title mb-3 col-md-12 col-sm-12">
+          <p>OUR SHOP</p>
+        </div>
         <div class="shop-heading col-md-12 col-sm-8 mb-3">
           <h1 class="shop-tagline">
             Here are the best seller <br />
@@ -248,19 +268,71 @@
           </div>
         </div>
       </div>
+      <!--section reviews-->
+      <div class="row mt-4">
+        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+          <div class="col-12">
+            <h1 class="review-heading">REVIEWS</h1>
+          </div>
+          <div class="mb-4 col-12">
+            <h1 class="review-paragrapgh">
+              Shop with confidance by reading customer <br />
+              reviews given by individuals who have used<br />
+              Bioomey. Excelient quality and streamlined<br />
+              service are both offered here.
+            </h1>
+          </div>
+          <div class="mb-2 col-12">
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="fa-solid fa-star fa-2x"></i>
+            <i class="rating">5/5</i>
+          </div>
+          <div class="mb-2 col-12">
+            <p class="reviews">2.479 reviews</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 col-md-6 col-sm-12">
+          <div class="col-12 d-flex">
+            <h2 class="review-paragraph-2">
+              We adore all our friends atBloomey, <br />
+              especially the beauties who have come<br />
+              to live with us! Great advice when<br />
+              needed, beautifully and safely packaged.<br />
+              Highly recommend, it's just the best<br />
+              place for healthy plants and great value!
+            </h2>
+          </div>
+          <div class="col-12 d-flex">
+            <p class="pamela-S">Pamela S.</p>
+          </div>
+          <div class="col-12 d-flex">
+            <p class="review-location">Lake Forest, CA</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2 col-md-2 col-sm-12 icons mb-4">
+          <img src="./Images/Extra Icons-1.png" alt="" />
+          <img src="./Images/Extra Icons.png" alt="" />
+        </div>
+      </div>
 
       <!-- Section -->
-      <div class="section-5 d-flex justify-content-between mb-5">
-        <div class="">
+      <!-- <div class=" mb-5 d-flex flex-lg-row flex-md-row flex-sm-row" id="double-img-section"> -->
+      <div class="mt-5 row" id="double-img-section">
+        <div class="col-md-5 col-6">
           <img
-            class="contain-image"
+            class="contain-image w-100 h-100"
             src="Images/unsplash_dDVU6D_6T80.png"
             alt="section-5-left"
           />
         </div>
-        <div class="">
+        <div class="col-md-7 col-6">
           <img
-            class="contain-image"
+            class="contain-image w-100 h-100"
             src="Images/unsplash_UHj-S65GVtA.png"
             alt="section-5-left"
           />
@@ -268,7 +340,7 @@
       </div>
 
       <!-- Section Instagram -->
-      <div class="instagram mb-5">
+      <div class="instagram mt-5">
         <img
           src="Images/img-above-footer.png"
           width="100%"
@@ -296,6 +368,7 @@
         </div>
       </div>
     </div>
+
     <div class="container-fluid footer">
       <div
         class="container d-flex flex-column flex-md-row justify-content-center text-center justify-content-md-between align-content-center py-3"
@@ -328,7 +401,7 @@
         </div>
 
         <div class="d-flex justify-content-center align-items-center">
-          <ul class="d-flex flex-column  flex-md-row gap-4">
+          <ul class="d-flex flex-column flex-md-row gap-4">
             <li class="menu-item"><a href="#">Help</a></li>
             <li class="menu-item"><a href="#">Contact Us</a></li>
             <li class="menu-item"><a href="#">Privacy & Terms</a></li>
